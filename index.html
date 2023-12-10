@@ -5,44 +5,34 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>flatheadstanley</title>
       <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-      <script >
-       const updateLocalTime = () => {
-          const options = {
-            dateStyle: "medium",
-            timeStyle: "long",
-            timeZone: 'Europe/Copenhagen'
-          };
-            
-          const copenhagenTime = new Date().toLocaleString('en-GB', options);
-          document.getElementById('localTime').innerHTML = '<b>Copenhagen, Denmark:</b> ' + copenhagenTime;
-        };
-        
-        setInterval(updateLocalTime, 1000);
-        window.addEventListener('DOMContentLoaded', updateLocalTime);
-      </script>
+      <script src="script.js"></script>
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
       <p id="localTime"><b>Copenhagen, Denmark:</b> Loading...</p>
-      <div class="parent">
-         <div class="header">
-            <pre id="title"> :::::::::: :::            ::: ::::::::::: :::    ::: ::::::::::     :::     :::::::::   :::::::: ::::::::::: :::     ::::    ::: :::        :::::::::: :::   ::: 
+      <div id="parent">
+         <div id="header">
+           <a href="/">
+            <pre id="title">                                                                                                                                                                  
+ :::::::::: :::            ::: ::::::::::: :::    ::: ::::::::::     :::     :::::::::   :::::::: ::::::::::: :::     ::::    ::: :::        :::::::::: :::   ::: 
  :+:        :+:          :+: :+:   :+:     :+:    :+: :+:          :+: :+:   :+:    :+: :+:    :+:    :+:   :+: :+:   :+:+:   :+: :+:        :+:        :+:   :+: 
  +:+        +:+         +:+   +:+  +:+     +:+    +:+ +:+         +:+   +:+  +:+    +:+ +:+           +:+  +:+   +:+  :+:+:+  +:+ +:+        +:+         +:+ +:+  
  :#::+::#   +#+        +#++:++#++: +#+     +#++:++#++ +#++:++#   +#++:++#++: +#+    +:+ +#++:++#++    +#+ +#++:++#++: +#+ +:+ +#+ +#+        +#++:++#     +#++:   
  +#+        +#+        +#+     +#+ +#+     +#+    +#+ +#+        +#+     +#+ +#+    +#+        +#+    +#+ +#+     +#+ +#+  +#+#+# +#+        +#+           +#+    
  #+#        #+#        #+#     #+# #+#     #+#    #+# #+#        #+#     #+# #+#    #+# #+#    #+#    #+# #+#     #+# #+#   #+#+# #+#        #+#           #+#    
- ###        ########## ###     ### ###     ###    ### ########## ###     ### #########   ########     ### ###     ### ###    #### ########## ##########    ###    </pre>
+ ###        ########## ###     ### ###     ###    ### ########## ###     ### #########   ########     ### ###     ### ###    #### ########## ##########    ###    
+            </pre>
+           </a>
          </div>
-         <div class="div3 content">
-            <img src="images/midtide.png" style="height: 400px"/>
-            <h2>About</h2>
+         <div id="grid-1" class="content">
+            <img src="images/midtide.png" alt="cover art of the EP \"flathedstanley - mid-tide\", a digital collage of boats at sea"/>
+            <h2 id="about">About</h2>
             <p>Hello, I am a solo artist originally from the UK and living in Copenhagen, Denmark. I like to make indie songs, usually with a house 
             or pop or rock flair and always a little bit lo-fi - partly out of convenience, partly due to skill issues, and partly for 
             【﻿ａｅｔｈｅｔｉｃｓ】. This site contains some information, links to find me on other platforms, and hopefully other things eventually (games, merch, ???)</p>
          </div>
-         <div class="div4 content">
-            <h2>Music</h2>
+         <div id="grid-2" class="content">
+            <h2 id="music">Music</h2>
             You can find my music here:
             <ul>
               <li><a target=”_blank” href="https://www.youtube.com/watch?v=dcIL75aZSTc&list=PL8z4-PEIoc2wjeyfJs4EIeJf1KhIxD6gx">Click here to listen to my latest song</a></li>
@@ -52,7 +42,7 @@
               <li><a target="_blank" href="https://www.deezer.com/en/artist/71273522">Deezer</a></li>
               <li><a target="_blank" href="https://flatheadstanley.bandcamp.com">Bandcamp</a></li>
             </ul>
-            <h2>Recommendations</h2>
+            <h2 id="recommendations">Recommendations</h2>
             <p>Here are some nice albums from other people that you might like:</p>
             <ul>
                <li><a href="https://www.youtube.com/watch?v=EORy_R3qeww&list=OLAK5uy_lAkO6KibA2n6xFCl7XoPd4eX-WI_FOYVo" target="_blank">Doug Bleichner - "Ladybird"</a></li>
@@ -61,17 +51,38 @@
                <li><a href="https://www.youtube.com/watch?v=IRzj0ogqlC4" target="_blank">leroy - "Dariacore 3... At least I think that's what it's called?"</a></li>
                <li><a href="https://www.youtube.com/watch?v=YyFGbhQnEb8&list=OLAK5uy_nXuUCWaLuaXfrwL27OuDxcKFTZQPrv5K8" target="_blank">jonatan leandoer96 - "Sugar World"</a></li>
             </ul>
-            <h2>FAQ</h2>
+            <h2 id="faq">FAQ</h2>
             <ul>
-              <li><b>Where does the name flatheadstanley come from?</b> When I was like 6 I needed an email address to sign up for Club Penguin and I wanted "<a href="https://en.wikipedia.org/wiki/Flat_Stanley" target="_blank">flatstanley</a>" but it was taken so I picked the next best thing instead
-              <li><b>Can I use your music in a YouTube/TikTok/etc. video?</b> Yes, just credit me</li>
-              <li><b>Do you play live?</b> No, performing live is my worst nightmare</li>
-              <li><b>Where can I buy/download your songs?</b> Right now, only my EP (mid-tide) is available to download from <a href="https://flatheadstanley.bandcamp.com" target="_blank">Bandcamp</a> (you can set the price to 0 to download for free). Everything else will be available (free) on my website soon™, feel free to rip from YouTube until then</li>
-              <li><b>Wanna collab bro?</b> Maybe, message me</li>
+              <li><b>Where does the name flatheadstanley come from?</b></br>When I was like 6 I needed an email address to sign up for Club Penguin and I wanted "<a href="https://en.wikipedia.org/wiki/Flat_Stanley" target="_blank">flatstanley</a>" but it was taken so I picked the next best thing instead
+                <li><b>Can I use your music in a YouTube/TikTok/etc. video?</b></br>Yes, just credit me</li>
+                <li><b>Do you play live?</b> </br>No, performing live is my worst nightmare</li>
+                <li><b>Where can I buy/download your songs?</b></br>Right now, only my EP (mid-tide) is available to buy/download from <a href="https://flatheadstanley.bandcamp.com" target="_blank">Bandcamp</a>. But you can download everything for free right here in the <a href="#downloads">downloads</a> section</li>
+                <li><b>Wanna collab bro?</b></br>Maybe, message me</li>
             </ul>
          </div>
-         <div class="div5 content">
-            <h2>Equipment</h2>
+         <div id="grid-3" class="content">
+           <h2 id="downloads">Downloads</h2>
+           You can download all of my songs and covers here:
+           <ul>
+             <li><a>if i was a folkstar (the avalanches cover)</a></li>
+             <li><a>happiness</a></li>
+             <li><a>20,000 satellites</a></li>
+             <li><a>crash n burn</a></li>
+             <li><a>when the lights go out (demo)</a></li>
+             <li><a>all i wanna do (the beach boys cover)</a></li>
+             <li><a>4th year (mid-tide EP)</a></li>
+             <li><a>foreign lands (mid-tide EP)</a></li>
+             <li><a>four white lines (mid-tide EP)</a></li>
+             <li><a>motionless (mid-tide EP)</a></li>
+             <li><a>northern star(mid-tide EP)</a></li>
+             <li><a>people watching</a></li>
+             <li><a>waiting outside</a></li>
+             <li><a>dance fever</a></li>
+             <li><a>i'm going</a></li>
+           </ul>
+         </div>
+         <div id="grid-4" class="content">
+            <h2 id="equipment">Equipment</h2>
             <p>Here are the things I use most often:</p>
             <ul>
                <li>Fender Standard MiM Precision Bass</li>
@@ -83,8 +94,8 @@
                <li>Shure SM57</li>
                <li>RØDE NT1-A</li>
             </ul>
-            <h2>Contact</h2>
-            <img src="images/profile.png" style="height: 200px"/>
+            <h2 id="contact">Contact</h2>
+            <img src="images/profile.png" alt="flatheadstanley playing guitar in front of a laptop in an apartment" />
             <p>Want to get in touch?</p>
             <ul>
                <li>Email: [artist name]@gmail.com</li>

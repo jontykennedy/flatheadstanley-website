@@ -1,143 +1,215 @@
-   body {
-     font-family: monospace;
-     margin: 0;
-     padding: 5px 25px;
-     background-color: #e1ecfe;
-     color: #0000fe;
-   }
+:root {
+  --font-family: monospace;
+  --primary-color: #0000fe;
+  --background-color: #e1ecfe;
+}
 
-   h2 {
-     text-decoration: underline;
-   }
+body {
+	font-family: var(--font-family);
+	margin: 0;
+	padding: 5px 25px;
+	background-color: var(--background-color);
+	color: var(--primary-color);
+}
 
-   #parent {
-     display: grid;
-     grid-template-columns: repeat(6, 1fr);
-     grid-template-rows: 200px repeat(4, 1fr);
-     grid-column-gap: 10px;
-     grid-row-gap: 10px;
-   } 
+h2 {
+	text-decoration: underline;
+}
 
-   .content {
-     border-style: double;
-     padding: 10px;
-     text-align: center;
-   }
+#parent {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 200px repeat(4, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
 
-   #header {
-     grid-area: 1 / 1 / 2 / -1;          
-     border-style: double;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     background-image: url("images/banner.png");
-     grid-template-rows: auto;
-     min-height: 50px;
-   }
+.content {
+	border-style: double;
+	padding: 10px;
+	text-align: center;
+}
 
-   #header a {
-     text-decoration: none;
-   }
+#header {
+	grid-area: 1 / 1 / 2 / -1;
+	border-style: double;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url("images/banner.png");
+	grid-template-rows: auto;
+	min-height: 50px;
+}
 
-   #grid-1 { grid-area: 2 / 1 / -1 / 3; }
-   #grid-2 { grid-area: 2 / 3 / -1 / 5; }
-   #grid-3 { grid-area: 2 / 5 / -1 / 6; }
-   #grid-4 { grid-area: 2 / 6 / -1 / 6; }
+#header a {
+	text-decoration: none;
+}
 
-   #grid-1 img {
-     max-height: 400px;
-     max-width: 100%;
-     width: auto;
-   }
+#grid-1 {
+	grid-area: 2 / 1 / -1 / 3;
+}
 
-   #grid-4 img {
-     max-height: 200px;
-     max-width: 100%;
-     width: auto;
-   }
+#grid-2 {
+	grid-area: 2 / 3 / -1 / 5;
+}
 
-   #title {
-     text-align: center;
-     font-size: 0.7rem;
-     font-weight: bold;
-     margin: 0;
-     background-color: #e1ecfe;
-   }
+#grid-3 {
+	grid-area: 2 / 5 / -1 / 6;
+}
 
-   a, #header a:visited {
-     text-decoration: underline;
-     color: #0000fe;
-   }
+#grid-4 {
+	grid-area: 2 / 6 / -1 / 6;
+}
 
-   a:visited {
-     color: #0000a6;
-   } 
+#grid-1 img {
+	max-height: 400px;
+	max-width: 100%;
+	width: auto;
+}
 
-   a:hover {
-     color: #5757ff;
-   }
+#grid-4 img {
+	max-height: 200px;
+	max-width: 100%;
+	width: auto;
+}
 
-   #localTime {
-     text-align: right;
-     margin: 5px;
-     padding: 0;
-   }
+#title {
+	text-align: center;
+	font-size: 0.7rem;
+	font-weight: bold;
+	margin: 0;
+	background-color: var(--background-color);
+}
 
-   #lastUpdated {
-     text-align: center;
-   }
+a,
+#header a:visited {
+	text-decoration: underline;
+	color: var(--primary-color);
+}
 
-   ul {
-     list-style-type: square;
-     text-align: left;
-   }
+a:visited {
+	color: #0000a6;
+}
 
-   #not-found {
-     text-align: center;
-     font-size: 1.2rem;
-   }
+a:hover {
+	color: #5757ff;
+}
 
-   @media screen and (max-width: 1200px) {
-     body {
-       padding: 5px;
-     }
+#localTime {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
 
-     #localTime {
-       text-align: center;
-     }
+#email-error-label {
+	color: red;
+}
 
-     #parent {
-       grid-template-columns: 1fr;
-       grid-template-rows: 150px repeat(4, auto);
-     }
+#email-success-label {
+	color: green;
+}
 
-     #header,
-     #grid-1,
-     #grid-2,
-     #grid-3,
-     #grid-4 {
-       grid-column: span 1;
-       grid-area: unset;
-     }
+ul {
+	list-style-type: square;
+	text-align: left;
+}
 
-     #title {
-       font-size: 0.4rem; 
-       margin: 10px 0;
-     }
+#not-found,
+#unsubscribe {
+	text-align: center;
+	font-size: 1.2rem;
+}
 
-     .div3 img {
-       max-height: 300px;
-       width: auto;
-     }
+#newsletter-form input[type=submit],
+#unsubscribe-form input[type=submit] {
+	padding: 5px;
+	margin-top: 5px;
+	background-color: var(--primary-color);
+	border: none;
+	color: #ffffff;
+}
 
-   @media screen and (max-width: 600px) {
-     #title {
-       font-size: 0.25rem; 
-       margin: 10px 0;
-     }
+#newsletter-form input[type=submit] {
+	width: 100%;
+}
 
-     #parent {
-       grid-template-rows: 100px repeat(4, auto);
-     }
-   }
+input {
+	font-family: var(--font-family);
+}
+
+#newsletter-form {
+	text-align: left;
+}
+
+#newsletter-form label {
+	font-weight: bold;
+}
+
+#newsletter-form input[type=text],
+#unsubscribe-form input[type=text] {
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+#newsletter-form input[type=text] {
+	width: 100%;
+}
+
+#newsletter-form input[type=submit] {
+	padding: 5px;
+	margin-top: 5px;
+	background-color: var(--primary-color);
+	border: none;
+	color: #ffffff;
+	width: 100%;
+}
+
+#newsletter-form input[type=submit]:hover,
+#unsubscribe-form input[type=submit]:hover {
+	background-color: #5757ff;
+	cursor: pointer;
+}
+
+#email-disclaimer {
+	font-size: 0.8em;
+}
+
+@media screen and (max-width: 1200px) {
+	body {
+		padding: 5px;
+	}
+
+	#localTime {
+		text-align: center;
+	}
+
+	#parent {
+		grid-template-columns: 1fr;
+		grid-template-rows: 150px repeat(4, auto);
+	}
+
+	#header,
+	#grid-1,
+	#grid-2,
+	#grid-3,
+	#grid-4 {
+		grid-column: span 1;
+		grid-area: unset;
+	}
+
+	#title {
+		font-size: 0.4rem;
+		margin: 10px 0;
+	}
+
+	@media screen and (max-width: 600px) {
+		#title {
+			font-size: 0.25rem;
+			margin: 10px 0;
+		}
+
+		#parent {
+			grid-template-rows: 100px repeat(4, auto);
+		}
+	}

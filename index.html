@@ -3,6 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to the OFFICIAL flatheadstanley web experience"/>
       <title>flatheadstanley</title>
       <link rel="icon" type="image/x-icon" href="images/favicon.ico">
       <script src="script.js"></script>
@@ -74,12 +75,22 @@
              <li><a>foreign lands (mid-tide EP)</a></li>
              <li><a>four white lines (mid-tide EP)</a></li>
              <li><a>motionless (mid-tide EP)</a></li>
-             <li><a>northern star(mid-tide EP)</a></li>
+             <li><a>northern star (mid-tide EP)</a></li>
              <li><a>people watching</a></li>
              <li><a>waiting outside</a></li>
              <li><a>dance fever</a></li>
              <li><a>i'm going</a></li>
            </ul>
+           <h2 id="newsletter">Newsletter</h2>
+           <p>Sign up to hear about new releases and announcements:</p>
+           <form id="newsletter-form" onsubmit="event.preventDefault(); submitNewsletterRequest(event);">
+            <p id="email-error-label"></p>
+            <p id="email-success-label"></p>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" placeholder="mail@example.com">
+            <input type="submit" value="Submit">
+           </form> 
+           <p id="email-disclaimer">Your email will <b>never</b> be sold, given away, or used for spam</p>
          </div>
          <div id="grid-4" class="content">
             <h2 id="equipment">Equipment</h2>
@@ -98,12 +109,11 @@
             <img src="images/profile.png" alt="flatheadstanley playing guitar in front of a laptop in an apartment" />
             <p>Want to get in touch?</p>
             <ul>
-               <li>Email: [artist name]@gmail.com</li>
+               <li>Email: mail@[artist name].com</li>
                <li>Instagram: <a href="https://www.instagram.com/flatheadstanley/" target"_blank">@flatheadstanley</a></li>
                <li>Discord: jonty1146</li>
             </ul>
          </div>
       </div>
-      <p id="lastUpdated">Last updated: 11th December 2023</p>
    </body>
 </html>

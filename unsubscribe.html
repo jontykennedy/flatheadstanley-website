@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>flatheadstanley - unsubscribe</title>
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+     <div id="unsubscribe">
+       <h1><b>Unsubscribe</b></h1>
+       <p>Please enter the email address to unsubscribe from the newsletter:</p>
+       <form id="unsubscribe-form" onsubmit="event.preventDefault(); submitUnsubscribeRequest(event);">
+        <p id="email-error-label"></p>
+        <p id="email-success-label"></p>
+        <input type="text" id="email" name="email" placeholder="mail@example.com">
+        <input type="submit" value="Submit">
+       </form> 
+       <p><a href="/">Click here to go home</a></a>
+     </div>
+   </body>
+</html>

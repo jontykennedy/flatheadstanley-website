@@ -5,11 +5,25 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>flatheadstanley</title>
       <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-      <script src="script.js"></script>
+      <script >
+       const updateLocalTime = () => {
+          const options = {
+            dateStyle: "medium",
+            timeStyle: "long",
+            timeZone: 'Europe/Copenhagen'
+          };
+            
+          const copenhagenTime = new Date().toLocaleString('en-GB', options);
+          document.getElementById('localTime').innerHTML = '<b>Copenhagen, Denmark:</b> ' + copenhagenTime;
+        };
+        
+        setInterval(updateLocalTime, 1000);
+        window.addEventListener('DOMContentLoaded', updateLocalTime);
+      </script>
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
-      <p id="localTime"></p>
+      <p id="localTime"><b>Copenhagen, Denmark:</b> Loading...</p>
       <div class="parent">
          <div class="header">
             <pre id="title"> :::::::::: :::            ::: ::::::::::: :::    ::: ::::::::::     :::     :::::::::   :::::::: ::::::::::: :::     ::::    ::: :::        :::::::::: :::   ::: 

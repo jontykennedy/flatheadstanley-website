@@ -19,7 +19,6 @@ h2 {
 #parent {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 200px repeat(4, 1fr);
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 }
@@ -39,7 +38,7 @@ h2 {
 	flex-direction: column;
 	background-image: url("images/banner.png");
 	grid-template-rows: auto;
-	min-height: 50px;
+	height: 200px;
 }
 
 #header a {
@@ -47,19 +46,27 @@ h2 {
 }
 
 #grid-1 {
-	grid-area: 2 / 1 / -1 / 3;
+	grid-area: 2 / 1 / 3 / 3;
 }
 
 #grid-2 {
-	grid-area: 2 / 3 / -1 / 5;
+	grid-area: 2 / 3 / 3 / 6;
 }
 
 #grid-3 {
-	grid-area: 2 / 5 / -1 / 6;
+	grid-area: 3 / 4 / 3 / 5;
 }
 
 #grid-4 {
-	grid-area: 2 / 6 / -1 / 6;
+	grid-area: 2 / 6 / 3 / 6;
+}
+
+#grid-5 {
+  grid-area: 3 / 1 / 3 / 4;
+}
+
+#grid-6 {
+  grid-area: 3 / 5 / 3 / -1;
 }
 
 #grid-1 img {
@@ -68,8 +75,14 @@ h2 {
 	width: auto;
 }
 
-#grid-4 img {
+#grid-3 img {
 	max-height: 200px;
+	max-width: 100%;
+	width: auto;
+}
+
+#grid-4 img {
+	max-height: 250px;
 	max-width: 100%;
 	width: auto;
 }
@@ -80,6 +93,12 @@ h2 {
 	font-weight: bold;
 	margin: 0;
 	background-color: var(--background-color);
+}
+
+.demo {
+  border: 1px dashed blue;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 a,
@@ -172,7 +191,16 @@ input {
 }
 
 #email-disclaimer {
-	font-size: 0.8em;
+	font-size: 0.9em;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 90%;
+}
+
+#grid-5 audio {
+  width: 80%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -186,14 +214,19 @@ input {
 
 	#parent {
 		grid-template-columns: 1fr;
-		grid-template-rows: 150px repeat(4, auto);
 	}
+
+  #header {
+    height: 150px;
+  }
 
 	#header,
 	#grid-1,
 	#grid-2,
 	#grid-3,
-	#grid-4 {
+	#grid-4,
+  #grid-5,
+  #grid-6 {
 		grid-column: span 1;
 		grid-area: unset;
 	}
@@ -209,7 +242,7 @@ input {
 			margin: 10px 0;
 		}
 
-		#parent {
-			grid-template-rows: 100px repeat(4, auto);
-		}
+    #header {
+      height: 100px;
+    }
 	}

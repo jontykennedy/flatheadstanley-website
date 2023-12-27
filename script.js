@@ -34,7 +34,6 @@ const submitNewsletterRequest = (e) => {
   const emailForm = document.getElementById('email');
   emailForm.value = "";
 
-  return;
 };
 
 const updateLocalTime = () => {
@@ -50,5 +49,3 @@ const updateLocalTime = () => {
   
 setInterval(updateLocalTime, 1000);
 window.addEventListener('DOMContentLoaded', updateLocalTime);
-
-

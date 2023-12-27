@@ -87,6 +87,12 @@ h2 {
 	width: auto;
 }
 
+#grid-5 img {
+	max-height: 75px;
+	max-width: 100%;
+	width: auto;
+}
+
 #title {
 	text-align: center;
 	font-size: 0.7rem;
@@ -216,17 +222,17 @@ input {
 		grid-template-columns: 1fr;
 	}
 
-  #header {
-    height: 150px;
-  }
+	#header {
+		height: 150px;
+	}
 
 	#header,
 	#grid-1,
 	#grid-2,
 	#grid-3,
 	#grid-4,
-  #grid-5,
-  #grid-6 {
+	#grid-5,
+	#grid-6 {
 		grid-column: span 1;
 		grid-area: unset;
 	}
@@ -235,14 +241,15 @@ input {
 		font-size: 0.4rem;
 		margin: 10px 0;
 	}
+}
 
-	@media screen and (max-width: 600px) {
-		#title {
-			font-size: 0.25rem;
-			margin: 10px 0;
-		}
-
-    #header {
-      height: 100px;
-    }
+@media screen and (max-width: 600px) {
+	#title {
+		font-size: 0.25rem;
+		margin: 10px 0;
 	}
+
+	#header {
+		height: 100px;
+	}
+}

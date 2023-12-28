@@ -141,9 +141,52 @@ ul {
 }
 
 #not-found,
-#unsubscribe {
+#unsubscribe,
+#links {
 	text-align: center;
 	font-size: 1.2rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#links a button {
+	padding: 20px;
+	margin: 10px auto;
+	background-color: var(--primary-color);
+	border: none;
+	font-family: var(--font-family);
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+#links button i {
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+#links a {
+  text-decoration: none;
+  display: block;
+  width: 50%;
+}
+
+#links a button {
+	color: #ffffff;
+}
+
+#links h2 {
+  margin: 10px;
+}
+
+#links img {
+  height: 150px;
+  border-radius: 200px;
+  margin-bottom: 10px;
 }
 
 #newsletter-form input[type=submit],
@@ -191,7 +234,8 @@ input {
 }
 
 #newsletter-form input[type=submit]:hover,
-#unsubscribe-form input[type=submit]:hover {
+#unsubscribe-form input[type=submit]:hover,
+#links button:hover {
 	background-color: #5757ff;
 	cursor: pointer;
 }
@@ -241,6 +285,10 @@ input {
 		font-size: 0.4rem;
 		margin: 10px 0;
 	}
+
+  #links a {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -252,4 +300,8 @@ input {
 	#header {
 		height: 100px;
 	}
+
+  #links a {
+    width: 90%;
+  }
 }

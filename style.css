@@ -62,11 +62,6 @@ iframe {
 	background-image: url("images/banner.png");
 	-ms-grid-rows: auto;
 	grid-template-rows: auto;
-	height: 200px;
-}
-
-#header a {
-	text-decoration: none;
 }
 
 #grid-1 {
@@ -135,12 +130,9 @@ iframe {
 	width: auto;
 }
 
-#title {
-	text-align: center;
-	font-size: 11px;
-	font-weight: bold;
-	margin: 0;
-	background-color: var(--background-color);
+#header img {
+	margin: 20px 0;
+  max-width: 90%;
 }
 
 .demo {
@@ -149,8 +141,7 @@ iframe {
   padding: 5px;
 }
 
-a,
-#header a:visited {
+a {
 	text-decoration: underline;
 	color: var(--primary-color);
 }
@@ -333,22 +324,12 @@ input {
 		grid-area: unset;
 	}
 
-	#title {
-		font-size: 6px;
-		margin: 10px 0;
-	}
-
   #links a {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
-	#title {
-		font-size: 3px;
-		margin: 10px 0;
-	}
-
 	#header {
 		height: 75px;
 	}

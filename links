@@ -17,7 +17,7 @@
         <a target="_blank" href="https://youtube.com/@flatheadstanley"><button><i class="fab fa-youtube"></i>YouTube</button></a>
         <a target="_blank" href="https://open.spotify.com/artist/4bzj6pI238BOlWmSKKxuku"><button><i class="fab fa-spotify"></i>Spotify</button></a>
         <a target="_blank" href="https://music.apple.com/us/artist/flatheadstanley/1476874507"><button><i class="fab fa-apple"></i>Apple Music</button></a>
-        <a target="_blank" href="https://flatheadstanley.bandcamp.com/"><button><i class="fab fa-bandcamp"></i>Bandcamp</button></a>
-        <a target="_blank" href="https://www.deezer.com/en/artist/71273522"><button><i class="fab fa-deezer"></i>Deezer</button></div></a>
+        <a target="_blank" href="https://www.deezer.com/en/artist/71273522"><button><i class="fab fa-deezer"></i>Deezer</button></a>
+     </div>
    </body>
 </html>

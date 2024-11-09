@@ -1,166 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the OFFICIAL flatheadstanley web experience">
-    <title>flatheadstanley</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<p id="localTime"><b>Copenhagen, Denmark:</b> Loading...</p>
-<div id="parent">
-    <div id="header">
-        <a href="/">
-            <pre id="title">                                                                                                                                                                  
- :::::::::: :::            ::: ::::::::::: :::    ::: ::::::::::     :::     :::::::::   :::::::: ::::::::::: :::     ::::    ::: :::        :::::::::: :::   ::: 
- :+:        :+:          :+: :+:   :+:     :+:    :+: :+:          :+: :+:   :+:    :+: :+:    :+:    :+:   :+: :+:   :+:+:   :+: :+:        :+:        :+:   :+: 
- +:+        +:+         +:+   +:+  +:+     +:+    +:+ +:+         +:+   +:+  +:+    +:+ +:+           +:+  +:+   +:+  :+:+:+  +:+ +:+        +:+         +:+ +:+  
- :#::+::#   +#+        +#++:++#++: +#+     +#++:++#++ +#++:++#   +#++:++#++: +#+    +:+ +#++:++#++    +#+ +#++:++#++: +#+ +:+ +#+ +#+        +#++:++#     +#++:   
- +#+        +#+        +#+     +#+ +#+     +#+    +#+ +#+        +#+     +#+ +#+    +#+        +#+    +#+ +#+     +#+ +#+  +#+#+# +#+        +#+           +#+    
- #+#        #+#        #+#     #+# #+#     #+#    #+# #+#        #+#     #+# #+#    #+# #+#    #+#    #+# #+#     #+# #+#   #+#+# #+#        #+#           #+#    
- ###        ########## ###     ### ###     ###    ### ########## ###     ### #########   ########     ### ###     ### ###    #### ########## ##########    ###    
-            </pre>
-        </a>
-    </div>
-    <div id="grid-1" class="content">
-        <h2 id="about">About</h2>
-        <img src="images/midtide.png"
-             alt="cover art of the EP flatheadstanley - mid-tide, a digital collage of boats at sea">
-        <p>Hello, I am a solo artist originally from the UK and living in Copenhagen, Denmark. I like to make indie
-            songs, usually with a house
-            or pop or rock flair and always a little bit lo-fi - partly out of convenience, partly due to skill issues,
-            and partly for
-            【﻿ａｅｓｔｈｅｔｉｃｓ】. This site contains some information, links to find me on other platforms, and hopefully other
-            things eventually (games, merch, ???)</p>
-    </div>
-    <div id="grid-2" class="content">
-        <h2 id="music">Music</h2>
-        <p>Listen to my latest song here:</p>
-<iframe class="youtube-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=Eq7Ggia3suSXjctn&amp;list=PL8z4-PEIoc2wjeyfJs4EIeJf1KhIxD6gx" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p>Or you can find my music on streaming platforms:</p>
-        <ul>
-            <li><a target="_blank" href="https://www.youtube.com/@flatheadstanley">YouTube</a></li>
-            <li><a target="_blank" href="https://open.spotify.com/artist/4bzj6pI238BOlWmSKKxuku">Spotify</a></li>
-            <li><a target="_blank" href="https://music.apple.com/us/artist/flatheadstanley/1476874507">Apple Music</a>
-            </li>
-            <li><a target="_blank" href="https://www.deezer.com/en/artist/71273522">Deezer</a></li>
-            <li><a target="_blank" href="https://flatheadstanley.bandcamp.com">Bandcamp</a></li>
-        </ul>
-    </div>
-    <div id="grid-4" class="content">
-       <h2 id="newsletter">Newsletter</h2>
-       <p>Sign up to hear about new releases and announcements:</p>
-       <form id="newsletter-form" onsubmit="event.preventDefault(); submitNewsletterRequest(event);">
-           <p id="email-error-label"></p>
-           <p id="email-success-label"></p>
-           <label for="email">Email:</label><br>
-           <input type="text" id="email" name="email" placeholder="mail@example.com">
-           <input type="submit" value="Submit">
-       </form>
-       <p id="email-disclaimer">Your email will <b>never</b> be sold, given away, or used for spam</p>
-        <h2 id="contact">Contact</h2>
-        <img src="images/profile.png" alt="flatheadstanley playing guitar in front of a laptop in an apartment">
-        <p>Want to get in touch?</p>
-        <ul>
-            <li>Email: mail@[artist name].com</li>
-            <li>Instagram: <a href="https://www.instagram.com/flatheadstanley/" target="_blank">@flatheadstanley</a></li>
-            <li>Discord: jonty1146</li>
-        </ul>
-    </div>
-    <div id="grid-3" class="content">
-        <h2 id="downloads">Downloads</h2>
-        You can download all of my songs and covers here:
-        <ul>
-            <li><a href="music/flatheadstanley+-+if+i+was+a+folkstar+(the+avalanches+cover).mp3" download>if i was a folkstar
-                (the avalanches cover)</a></li>
-            <li><a href="music/flatheadstanley+-+happiness.mp3" download>happiness</a></li>
-            <li><a href="music/flatheadstanley+-+20%2C000+satellites.mp3" download>20,000 satellites</a></li>
-            <li><a href="music/flatheadstanley+-+when+the+lights+go+out+(demo).mp3" download>when the lights go out (demo)</a>
-            </li>
-            <li><a href="music/flatheadstanley+-+all+i+wanna+do+(the+beach+boys+cover).mp3" download>all i wanna do (the beach
-                boys cover)</a></li>
-            <li><a href="music/flatheadstanley+-+crash+n+burn.mp3" download>crash n burn</a></li>
-            <li><b>mid-tide EP</b>:
-              <ul>
-                <li><a href="music/mid-tide/flatheadstanley+-+4th+year.mp3" download>4th year</a></li>
-                <li><a href="music/mid-tide/flatheadstanley+-+foreign+lands.mp3" download>foreign lands</a></li>
-                <li><a href="music/mid-tide/flatheadstanley+-+four+white+lines.mp3" download>four white lines</a></li>
-                <li><a href="music/mid-tide/flatheadstanley+-+motionless.mp3" download>motionless</a></li>
-                <li><a href="music/mid-tide/flatheadstanley+-+northern+star.mp3" download>northern star</a></li>
-              </ul>
-            </li>
-            <li><a href="music/flatheadstanley+-+people+watching.mp3" download>people watching</a></li>
-            <li><a href="music/flatheadstanley+-+waiting+outside.mp3" download>waiting outside</a></li>
-            <li><a href="music/Julien+Brami+%26+flatheadstanley+-+dance+fever.mp3" download>dance fever</a></li>
-            <li><a href="music/Julien+Brami+%26+flatheadstanley+-+i'm+going.mp3" download>i'm going</a></li>
-        </ul>
-        <br>
-        <img src="images/beach.png" alt="a cliff by the sea">
-    </div>
-    <div id="grid-5" class="content">
-        <h2 id="demos">Demos</h2>
-        <p>These are some demos that I either never finished or released:</p>
-        <div class="demo">
-          <p><b>dance to this!! (weekend)</b> (<a href="music/flatheadstanley+-+dance+to+this!!+(weekend).mp3" download>download</a>)</p>
-          <audio src="music/flatheadstanley+-+dance+to+this!!+(weekend).mp3" controls></audio>
-        </div>
-        <div class="demo">
-            <p><b>03.06.23 redacted</b> (<a href="music/flatheadstanley+-+03.06.23+redacted.mp3" download>download</a>)</p>
-            <audio src="music/flatheadstanley+-+03.06.23+redacted.mp3" controls></audio>
-        </div>
-        <div class="demo">
-          <p><b>so, what now</b> (<a href="music/flatheadstanley+-+so%2C+what+now.mp3" download>download</a>)</p>
-          <audio src="music/flatheadstanley+-+so%2C+what+now.mp3" controls></audio>
-        </div>
-        <div class="demo">
-            <p><b>bbzzzz</b> (<a href="music/flatheadstanley+-+bbzzzz.mp3" download>download</a>)</p>
-            <audio src="music/flatheadstanley+-+bbzzzz.mp3" controls></audio>
-        </div>
-    </div>
-    <div id="grid-6" class="content">
-        <h2 id="recommendations">Recommendations</h2>
-        <p>Here are some nice albums from other people that you might like:</p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=EORy_R3qeww&list=OLAK5uy_lAkO6KibA2n6xFCl7XoPd4eX-WI_FOYVo"
-                   target="_blank">Doug Bleichner - "Ladybird"</a></li>
-            <li><a href="https://www.youtube.com/watch?v=DV9KsV45vJ0&list=OLAK5uy_kJjM28-DvkYvFxF2TZymVJlzPJTImNGas"
-                   target="_blank">Bladee - "Crest"</a></li>
-            <li><a href="https://www.youtube.com/watch?v=XA6n9wWu4iI&list=OLAK5uy_kwni5b6zmqdPmq4eu8znSPHfHy7apidhg"
-                   target="_blank">Sun Drift - "Plenty"</a></li>
-            <li><a href="https://www.youtube.com/watch?v=IRzj0ogqlC4" target="_blank">leroy - "Dariacore 3... At least I
-                think that's what it's called?"</a></li>
-            <li><a href="https://www.youtube.com/watch?v=YyFGbhQnEb8&list=OLAK5uy_nXuUCWaLuaXfrwL27OuDxcKFTZQPrv5K8"
-                   target="_blank">jonatan leandoer96 - "Sugar World"</a></li>
-        </ul>
-        <h2 id="equipment">Equipment</h2>
-        <p>I use these things the most when making songs:</p>
-        <ul>
-            <li>Fender Standard MiM Precision Bass</li>
-            <li>Squier Silver Series MiJ Stratocaster</li>
-            <li>Boss CE-2W</li>
-            <li>JHS Morning Glory V4</li>
-            <li>Ableton Live 11</li>
-            <li>SSL 2+</li>
-            <li>Shure SM57</li>
-            <li>RØDE NT1-A</li>
-        </ul>
-        <h2 id="faq">FAQ</h2>
-        <ul>
-            <li><b>Where does the name flatheadstanley come from?</b><br>When I was like 6 I needed an email address to
-                sign up for Club Penguin and I wanted "<a href="https://en.wikipedia.org/wiki/Flat_Stanley" target="_blank">flatstanley</a>"
-                but it was taken, so I picked the next best thing instead</li>
-            <li><b>Can I use your music in a YouTube/TikTok/etc. video?</b><br>Yes, just credit me</li>
-            <li><b>Do you play live?</b> <br>No, performing live is my worst nightmare</li>
-            <li><b>Where can I buy/download your songs?</b><br>Right now, only my EP (mid-tide) is available to
-                buy/download from <a href="https://flatheadstanley.bandcamp.com" target="_blank">Bandcamp</a>. But you
-                can download everything for free right here in the <a href="#downloads">downloads</a> section
-            </li>
-            <li><b>Wanna collab bro?</b><br>Maybe, message me</li>
-        </ul>
-    </div>
-</div>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Welcome to the OFFICIAL flatheadstanley web experience">    <title>flatheadstanley</title>    <link rel="icon" type="image/x-icon" href="images/favicon.ico">    <script src="script.js"></script>    <link rel="stylesheet" href="style.css"></head><body><p id="localTime"><b>Copenhagen, Denmark:</b> Loading...</p><div id="parent">    <div id="header">      <img src="images/flatheadstanley-ascii.png">    </div>    <div id="grid-1" class="content">        <h2 id="about">About</h2>        <img src="images/midtide.png"             alt="cover art of the EP flatheadstanley - mid-tide, a digital collage of boats at sea">        <p>Hello, I am a solo artist originally from the UK and living in Copenhagen, Denmark. I usually make indie songs with a house or pop or rock flair            and a little bit lo-fi - partly out of convenience, partly due to skill issues, and partly for 【﻿ａｅｓｔｈｅｔｉｃｓ】.            This site contains some information, links to find my profiles on other platforms, and hopefully other things eventually</p>    </div>    <div id="grid-2" class="content">        <h2 id="music">Music</h2>        <p>Listen to my latest song here:</p><iframe class="youtube-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=Eq7Ggia3suSXjctn&amp;list=PL8z4-PEIoc2wjeyfJs4EIeJf1KhIxD6gx" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <p>Or you can find my music on streaming platforms:</p>        <ul>            <li><a target="_blank" href="https://www.youtube.com/@flatheadstanley">YouTube</a></li>            <li><a target="_blank" href="https://open.spotify.com/artist/4bzj6pI238BOlWmSKKxuku">Spotify</a></li>            <li><a target="_blank" href="https://music.apple.com/us/artist/flatheadstanley/1476874507">Apple Music</a></li>            <li><a target="_blank" href="https://www.deezer.com/en/artist/71273522">Deezer</a></li>        </ul>    </div>    <div id="grid-4" class="content">       <h2 id="newsletter">Newsletter</h2>       <p>Sign up to hear about new releases and announcements:</p>       <form id="newsletter-form" onsubmit="event.preventDefault(); submitNewsletterRequest(event);">           <p id="email-error-label"></p>           <p id="email-success-label"></p>           <label for="email">Email:</label><br>           <input type="text" id="email" name="email" placeholder="mail@example.com">           <input type="submit" value="Submit">       </form>       <p id="email-disclaimer">Your email will <b>never</b> be sold, given away, or used for spam</p>        <h2 id="contact">Contact</h2>        <img src="images/profile.png" alt="flatheadstanley playing guitar in front of a laptop in an apartment">        <p>Want to get in touch?</p>        <ul>            <li>Email: mail@flatheadstanley.com</li>            <li>Instagram: <a href="https://www.instagram.com/flatheadstanley/" target="_blank">@flatheadstanley</a></li>            <li>Discord: jonty1146</li>        </ul>    </div>    <div id="grid-3" class="content">        <h2 id="downloads">Downloads</h2>        You can download all of my songs and covers here:        <ul>            <li><a href="music/flatheadstanley+-+if+i+was+a+folkstar+(the+avalanches+cover).mp3" download>if i was a folkstar                (the avalanches cover)</a></li>            <li><a href="music/flatheadstanley+-+happiness.mp3" download>happiness</a></li>            <li><a href="music/flatheadstanley+-+20%2C000+satellites.mp3" download>20,000 satellites</a></li>            <li><a href="music/flatheadstanley+-+when+the+lights+go+out+(demo).mp3" download>when the lights go out (demo)</a>            </li>            <li><a href="music/flatheadstanley+-+all+i+wanna+do+(the+beach+boys+cover).mp3" download>all i wanna do (the beach                boys cover)</a></li>            <li><a href="music/flatheadstanley+-+crash+n+burn.mp3" download>crash n burn</a></li>            <li><b>mid-tide EP</b>:              <ul>                <li><a href="music/mid-tide/flatheadstanley+-+4th+year.mp3" download>4th year</a></li>                <li><a href="music/mid-tide/flatheadstanley+-+foreign+lands.mp3" download>foreign lands</a></li>                <li><a href="music/mid-tide/flatheadstanley+-+four+white+lines.mp3" download>four white lines</a></li>                <li><a href="music/mid-tide/flatheadstanley+-+motionless.mp3" download>motionless</a></li>                <li><a href="music/mid-tide/flatheadstanley+-+northern+star.mp3" download>northern star</a></li>              </ul>            </li>            <li><a href="music/flatheadstanley+-+people+watching.mp3" download>people watching</a></li>            <li><a href="music/flatheadstanley+-+waiting+outside.mp3" download>waiting outside</a></li>            <li><a href="music/Julien+Brami+%26+flatheadstanley+-+dance+fever.mp3" download>dance fever</a></li>            <li><a href="music/Julien+Brami+%26+flatheadstanley+-+i'm+going.mp3" download>i'm going</a></li>        </ul>        <br>        <img src="images/beach.png" alt="a cliff by the sea">    </div>    <div id="grid-5" class="content">        <h2 id="demos">Demos</h2>        <p>These are some demos that I either never finished or released:</p>        <div class="demo">          <p><b>dance to this (weekend)</b> (<a href="music/flatheadstanley+-+dance+to+this!!+(weekend).mp3" download>download</a>)</p>          <audio src="music/flatheadstanley+-+dance+to+this!!+(weekend).mp3" controls></audio>        </div>        <div class="demo">            <p><b>03.06.23 redacted</b> (<a href="music/flatheadstanley+-+03.06.23+redacted.mp3" download>download</a>)</p>            <audio src="music/flatheadstanley+-+03.06.23+redacted.mp3" controls></audio>        </div>        <div class="demo">          <p><b>so, what now</b> (<a href="music/flatheadstanley+-+so%2C+what+now.mp3" download>download</a>)</p>          <audio src="music/flatheadstanley+-+so%2C+what+now.mp3" controls></audio>        </div>        <div class="demo">            <p><b>bbzzzz</b> (<a href="music/flatheadstanley+-+bbzzzz.mp3" download>download</a>)</p>            <audio src="music/flatheadstanley+-+bbzzzz.mp3" controls></audio>        </div>        <div class="demo">            <p><b>daytona</b> (<a href="music/flatheadstanley+-+daytona.mp3" download>download</a>)</p>            <audio src="music/flatheadstanley+-+daytona.mp3" controls></audio>        </div>    </div>    <div id="grid-6" class="content">        <h2 id="recommendations">Recommendations</h2>        <p>Here are some nice albums from other people that you might like:</p>        <ul>            <li><a href="https://www.youtube.com/watch?v=EORy_R3qeww&list=OLAK5uy_lAkO6KibA2n6xFCl7XoPd4eX-WI_FOYVo"                   target="_blank">Doug Bleichner - "Ladybird"</a></li>            <li><a href="https://www.youtube.com/watch?v=DV9KsV45vJ0&list=OLAK5uy_kJjM28-DvkYvFxF2TZymVJlzPJTImNGas"                   target="_blank">Bladee - "Crest"</a></li>            <li><a href="https://www.youtube.com/watch?v=XA6n9wWu4iI&list=OLAK5uy_kwni5b6zmqdPmq4eu8znSPHfHy7apidhg"                   target="_blank">Sun Drift - "Plenty"</a></li>            <li><a href="https://www.youtube.com/watch?v=IRzj0ogqlC4" target="_blank">leroy - "Dariacore 3... At least I                think that's what it's called?"</a></li>            <li><a href="https://www.youtube.com/watch?v=YyFGbhQnEb8&list=OLAK5uy_nXuUCWaLuaXfrwL27OuDxcKFTZQPrv5K8"                   target="_blank">jonatan leandoer96 - "Sugar World"</a></li>        </ul>        <h2 id="equipment">Equipment</h2>        <p>I use these things the most when making songs:</p>        <ul>            <li>Fender Standard Precision Bass</li>            <li>Fender Player II Mustang</li>            <li>Boss CE-2W</li>            <li>JHS Morning Glory V4</li>            <li>Ableton Live 12</li>            <li>SSL 2+</li>            <li>Shure SM57</li>            <li>RØDE NT1-A</li>        </ul>        <h2 id="faq">FAQ</h2>        <ul>            <li><b>Where does the name flatheadstanley come from?</b><br>I needed an email address when I was younger to                sign up for Club Penguin and I wanted "<a href="https://en.wikipedia.org/wiki/Flat_Stanley" target="_blank">flatstanley</a>"                but it was taken, so I picked the next best thing instead</li>            <li><b>Can I use your music in a YouTube/TikTok/etc. video?</b><br>Yes, just credit me</li>            <li><b>Do you play live?</b> <br>No</li>            <li><b>Where can I buy/download your songs?</b><br>You can download everything for free right here in the                <a href="#downloads">downloads</a> section            </li>        </ul>    </div></div></body></html>

@@ -9,15 +9,23 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    </head>
    <body>
-     <div id="links">
-        <h2><b>flatheadstanley</b></h2>
-        <img src="images/profile.png" alt="flatheadstanley playing guitar in front of a laptop in an apartment"/>
-        <a target="_blank" href="https://open.spotify.com/artist/4bzj6pI238BOlWmSKKxuku"><button><i class="fab fa-spotify"></i>Spotify</button></a>
-        <a target="_blank" href="https://music.apple.com/us/artist/flatheadstanley/1476874507"><button><i class="fab fa-apple"></i>Apple Music</button></a>
-        <a target="_blank" href="https://youtube.com/@flatheadstanley"><button><i class="fab fa-youtube"></i>YouTube</button></a>
-        <a target="_blank" href="https://www.deezer.com/en/artist/71273522"><button><i class="fab fa-deezer"></i>Deezer</button></a>
-        <a target="_blank" href="/"><button><i class="fas fa-globe"></i>Website</button></a>
-        <a target="_blank" href="https://instagram.com/flatheadstanley"><button><i class="fab fa-instagram"></i>Instagram</button></a>
-     </div>
+   <div id="links">
+      <a target="_blank" href="/"><h2><b>flatheadstanley</b></h2></a>
+      <a target="_blank" href="/"><img src="images/profile.png" alt="flatheadstanley playing guitar in front of a laptop in an apartment"/></a>
+      <div id="icon-links">
+         <a target="_blank" href="https://open.spotify.com/artist/4bzj6pI238BOlWmSKKxuku"><i class="fab fa-spotify"></i></a>
+         <a target="_blank" href="https://music.apple.com/us/artist/flatheadstanley/1476874507"><i class="fab fa-apple"></i></a>
+         <a target="_blank" href="https://youtube.com/@flatheadstanley"><i class="fab fa-youtube"></i></a>
+         <a target="_blank" href="https://instagram.com/flatheadstanley"><i class="fab fa-instagram"></i></a>
+         <a target="_blank" href="/"><i class="fas fa-globe"></i></a>
+      </div>
+      <div id="buttons">
+         <a target="_blank" href="https://fanlink.tv/underthinking"><button>Latest single - 'underthinking'</button></a>
+         <a target="_blank" href="https://www.youtube.com/watch?v=BPFtP714Od8"><button>'happiness // 20,000 satellites' MV</button></a>
+         <a target="_blank" href="https://www.youtube.com/watch?v=dcIL75aZSTc"><button>'if i was a folkstar' cover</button></a>
+         <a target="_blank" href="https://www.youtube.com/watch?v=o82yVnQaX18"><button>'crash n burn' MV</button></a>
+         <a target="_blank" href="/#downloads"><button>Download my music (free!)</button></a>
+      </div>
+   </div>
    </body>
 </html>

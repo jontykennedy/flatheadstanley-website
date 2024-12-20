@@ -154,12 +154,6 @@ a:hover {
 	color: #5757ff;
 }
 
-#localTime {
-	text-align: right;
-	margin: 0;
-	padding: 0;
-}
-
 #email-error-label {
 	color: red;
 }
@@ -196,12 +190,12 @@ ul {
 
 #links a button {
 	padding: 20px;
-	margin: 10px auto;
+	margin: 7px auto;
 	background-color: var(--primary-color);
 	border: none;
 	font-family: var(--font-family);
-  font-size: 1.2rem;
-  width: 100%;
+	font-size: 1.2rem;
+	width: 100%;
 }
 
 #links button i {
@@ -292,6 +286,35 @@ input {
 
 #grid-5 audio {
   width: 80%;
+}
+
+#icon-links {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin: 10px 0;
+}
+
+#icon-links a {
+	text-decoration: none;
+	font-size: 2rem;
+	color: var(--primary-color);
+}
+
+#icon-links a:hover {
+	color: #5757ff;
+}
+
+#buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5px;
+}
+
+#buttons button:hover {
+	background-color: #5757ff;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
